@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/user_set_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:id="@+id/find_password_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="8dp" android:paddingTop="8dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:background="@drawable/layout_white_bg" android:gravity="center_vertical" android:orientation="vertical" android:paddingBottom="5dp">
+          <LinearLayout android:id="@+id/user_set_top_layout_One" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5dp">
+            <ImageView android:id="@+id/user_set_ivUserpic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="10dp" android:src="@drawable/user_set_userpic"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_42" android:textColor="#A67D3D" android:textSize="17sp"/>
+            <TextView android:id="@+id/user_set_tvUserName" android:layout_width="75dp" android:layout_height="wrap_content" android:ellipsize="middle" android:singleLine="true" android:textColor="#A67D3D" android:textSize="15sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:singleLine="true" android:text="@string/DW_string_43" android:textColor="#A67D3D" android:textSize="17sp"/>
+            <TextView android:id="@+id/user_set_tvNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:textSize="15sp"/>
+          </LinearLayout>
+          <LinearLayout android:id="@+id/user_set_top_layout_Two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5dp" android:visibility="gone">
+            <TextView android:id="@+id/user_set_top_tvTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1" android:text="@string/DW_string_44" android:textColor="#A67D3D" android:textSize="17sp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:background="@drawable/btn_back_bg" android:onClick="BackClick" android:text="@string/DW_string_45"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_center_layout_One" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_user_set_center_bg_up" android:gravity="center_vertical" android:onClick="OneClick" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1" android:text="@string/DW_string_46" android:textColor="#333333" android:textSize="14sp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/user_set_center_right_bg"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_user_set_center_bg_center" android:gravity="center_vertical" android:onClick="TwoClick" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_47" android:textColor="#333333" android:textSize="14sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:text="@string/DW_string_48" android:textColor="#666666" android:textSize="14sp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/user_set_center_right_bg"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_user_set_center_bg_center" android:gravity="center_vertical" android:onClick="ThreeClick" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_49" android:textColor="#333333" android:textSize="14sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:text="@string/DW_string_50" android:textColor="#666666" android:textSize="14sp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/user_set_center_right_bg"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_user_set_center_bg_center" android:gravity="center_vertical" android:onClick="FourClick" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1" android:text="@string/DW_string_51" android:textColor="#333333" android:textSize="14sp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/user_set_center_right_bg"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_down" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_52" android:textColor="#333333" android:textSize="14sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:text="@string/DW_string_53" android:textColor="#666666" android:textSize="14sp"/>
+            <CheckBox android:id="@+id/user_set_center_cbIsRemember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:background="@drawable/btn_user_set_isremeber" android:button="@null"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_center_layout_Two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_up" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_54" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Two_etNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_55" android:inputType="textPersonName" android:maxLength="7" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_center" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_56" android:textColor="#333333" android:textSize="14sp"/>
+            <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:checkedButton="@+id/user_set_male" android:orientation="horizontal">
+              <RadioButton android:id="@id/user_set_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:button="@drawable/sex_bg" android:text="@string/DW_string_57" android:textColor="#666666"/>
+              <RadioButton android:id="@+id/user_set_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/sex_bg" android:text="@string/DW_string_58" android:textColor="#666666"/>
+            </RadioGroup>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_center" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_59" android:textColor="#333333" android:textSize="14sp"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+              <Spinner android:id="@+id/user_set_center_layout_Two_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@null"/>
+              <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|right" android:layout_marginRight="5dp" android:background="@drawable/user_set_down_bg"/>
+            </FrameLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/DW_string_60" android:textColor="#333333" android:textSize="14sp"/>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+              <TextView android:id="@+id/user_set_center_layout_Two_tvBirthday" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:textColor="#333333" android:textSize="14sp"/>
+              <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|right" android:layout_marginRight="10dp" android:background="@drawable/user_set_down_bg"/>
+            </FrameLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_down" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_61" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Two_etPhoneNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_62" android:inputType="phone" android:maxLength="12" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_center_layout_Three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_up" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_63" android:textColor="#333333" android:textSize="14sp"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+              <Spinner android:id="@+id/user_set_center_layout_three_spQuestion1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@null"/>
+              <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|right" android:layout_marginRight="20dp" android:background="@drawable/user_set_down_bg"/>
+            </FrameLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_center" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_64" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_three_etAnswer1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textPersonName" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_center" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_65" android:textColor="#333333" android:textSize="14sp"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+              <Spinner android:id="@+id/user_set_center_layout_three_spQuestion2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@null"/>
+              <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|right" android:layout_marginRight="20dp" android:background="@drawable/user_set_down_bg"/>
+            </FrameLayout>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_down" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_66" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_three_etAnswer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textPersonName" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_center_layout_Four" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20dp" android:layout_marginTop="10dp" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_up" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_67" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Four_etTrueName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textPersonName" android:maxLength="6" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_down" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_68" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Four_etIdentityCard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:digits="0123456789x" android:inputType="text" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_center_layout_Five" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15dp" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_up" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_69" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Five_etOldPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textVisiblePassword" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_center" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_70" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Five_etNewPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textPassword" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_set_center_bg_down" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/DW_string_71" android:textColor="#333333" android:textSize="14sp"/>
+            <EditText android:id="@+id/user_set_center_layout_Five_etReNewPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="@null" android:inputType="textPassword" android:maxLength="20" android:textColor="#666666" android:textSize="13sp"/>
+          </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/user_set_btn_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:gravity="center" android:orientation="horizontal" android:visibility="gone">
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_submit_big" android:onClick="SubmitClick" android:text="@string/DW_string_72" android:textColor="#6a3600" android:textSize="16sp"/>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:background="@drawable/btn_white_big" android:onClick="goGameClick" android:text="@string/DW_string_73" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

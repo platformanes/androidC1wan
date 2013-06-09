@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://ns.adobe.com/air/extension/3.5">
+  <id>com.c1wan.ane</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+  
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>c1wanane.jar</nativeLibrary>
+        <initializer>com.c1wan.ane.C1wanExtension</initializer>
+        <finalizer>com.c1wan.ane.C1wanExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    
+  </platforms>
+</extension>

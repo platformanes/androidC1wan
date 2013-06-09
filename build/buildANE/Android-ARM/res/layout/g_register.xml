@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/register_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" android:gravity="center" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:id="@+id/register_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:id="@+id/register_second_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center" android:orientation="vertical" android:paddingBottom="10dp" android:paddingTop="10dp">
+        <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/user_et_bg" android:gravity="center" android:orientation="horizontal" android:paddingLeft="15dp">
+          <TableRow android:layout_marginBottom="5dp" android:layout_weight="1" android:gravity="bottom">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_35" android:textColor="#222222" android:textSize="15sp"/>
+            <EditText android:id="@+id/main_EVuserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_36" android:inputType="textCapWords" android:maxLength="20" android:paddingLeft="8dp" android:singleLine="true" android:textColor="#666666" android:textSize="14sp"/>
+          </TableRow>
+          <TableRow android:layout_marginTop="5dp" android:layout_weight="1" android:gravity="top">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_37" android:textColor="#222222" android:textSize="15sp"/>
+            <EditText android:id="@+id/main_EVpassWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_38" android:inputType="textPassword" android:maxLength="20" android:paddingLeft="8dp" android:singleLine="true" android:textColor="#666666" android:textSize="14sp"/>
+          </TableRow>
+        </TableLayout>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_marginTop="18dp" android:background="@drawable/btn_green_verybig" android:onClick="login" android:text="@string/DW_string_39" android:textColor="#ffffff" android:textSize="16sp"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_white_big" android:onClick="quickGameClick" android:text="@string/DW_string_40" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:background="@drawable/btn_white_big" android:onClick="CancelClick" android:text="@string/DW_string_41" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" layout="@layout/g_bottom_include"/>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

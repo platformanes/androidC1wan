@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/message_gmlist_item_offline_background_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/message_gmlist_item_offline_background"/>
+
+</selector> -->
+ <selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/drawable_gm_item_down" android:state_focused="true"/>
+    <item android:drawable="@drawable/drawable_gm_item_down" android:state_selected="true"/>
+    <item android:drawable="@drawable/drawable_gm_item_down" android:state_pressed="true"/>
+    <item android:drawable="@drawable/drawable_gm_item_up"/>
+    
+
+</selector>

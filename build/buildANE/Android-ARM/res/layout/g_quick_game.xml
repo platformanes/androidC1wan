@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/quick_game_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:id="@+id/quick_game_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:id="@+id/quick_game_second_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10dp" android:paddingTop="10dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/quickgame_center_bg" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="2dp">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/quickgame_center_et_bg" android:orientation="vertical" android:paddingLeft="15dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" android:gravity="bottom" android:orientation="horizontal">
+              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_30" android:textColor="#222222" android:textSize="15sp"/>
+              <TextView android:id="@+id/quick_game_tvUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:paddingLeft="8dp" android:textColor="#666666" android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1" android:gravity="top" android:orientation="horizontal">
+              <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_31" android:textColor="#222222" android:textSize="15sp"/>
+              <TextView android:id="@+id/quick_game_tvPassWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:paddingLeft="8dp" android:textColor="#666666" android:textSize="14sp"/>
+            </LinearLayout>
+          </LinearLayout>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:background="@drawable/btn_quickgame_saveuser" android:onClick="SaveUserClick"/>
+        </LinearLayout>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_marginTop="18dp" android:background="@drawable/btn_orange_verybig" android:onClick="GoGameClick" android:text="@string/DW_string_32" android:textColor="#6a3600" android:textSize="16sp"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_white_big" android:onClick="LoginClick" android:text="@string/DW_string_33" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:background="@drawable/btn_white_big" android:onClick="LandingClick" android:text="@string/DW_string_34" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8dp" android:layout_marginTop="12dp" layout="@layout/g_bottom_include"/>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

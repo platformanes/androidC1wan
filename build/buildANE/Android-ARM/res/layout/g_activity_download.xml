@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:layout_width="392dp" android:layout_height="300dp" android:layout_gravity="center" android:background="@drawable/activity_download_bg" android:orientation="vertical" android:padding="30dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginBottom="10dp" android:text="@string/DW_string_0" android:textColor="#000000" android:textSize="18sp"/>
+  <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_weight="1" android:fadingEdge="none" android:scrollbars="none">
+    <TextView android:id="@+id/tv_updateInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#ff000000" android:textSize="16sp"/>
+  </ScrollView>
+  <LinearLayout android:id="@+id/linear_downloadview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:gravity="center" android:orientation="horizontal" android:visibility="gone">
+    <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="120dp" android:layout_height="4dp" android:layout_marginRight="10dp"/>
+    <TextView android:id="@+id/tv_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:text="@string/DW_string_1" android:textColor="#000000"/>
+  </LinearLayout>
+  <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/activity_download_line"/>
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp" android:layout_marginTop="10dp" android:gravity="center">
+    <Button android:id="@+id/btn_download" android:layout_width="101dp" android:layout_height="34dp" android:layout_marginRight="15dp" android:background="@drawable/btn_green_download" android:onClick="doClick" android:text="@string/DW_string_2"/>
+    <Button android:id="@+id/btn_cancel" android:layout_width="101dp" android:layout_height="34dp" android:layout_marginLeft="15dp" android:background="@drawable/btn_white_download" android:onClick="finishClick" android:text="@string/DW_string_3"/>
+  </LinearLayout>
+</LinearLayout>

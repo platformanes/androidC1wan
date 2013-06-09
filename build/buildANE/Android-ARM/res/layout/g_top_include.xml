@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" xmlns:android="http://schemas.android.com/apk/res/android">
+  <RadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+    <RadioButton android:id="@+id/top_include_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_top_include_main" android:button="@null" android:onClick="MainClick"/>
+    <RadioButton android:id="@+id/top_include_userset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_top_include_userset" android:button="@null" android:onClick="UserSetClick"/>
+    <RadioButton android:id="@+id/top_include_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_top_include_message" android:button="@null" android:onClick="MessageClick"/>
+    <RadioButton android:id="@+id/top_include_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_top_include_pay" android:button="@null" android:onClick="PayClick"/>
+    <RadioButton android:id="@+id/top_include_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_top_include_more" android:button="@null" android:onClick="MoreClick"/>
+  </RadioGroup>
+  <TextView android:id="@+id/top_include_message_tvNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginLeft="33dp" android:layout_marginTop="10dp" android:background="@drawable/message_count" android:gravity="center" android:text="@string/DW_string_75" android:textColor="#ffffff" android:textSize="10sp" android:visibility="gone"/>
+</FrameLayout>

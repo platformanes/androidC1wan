@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/landing_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:id="@+id/landing_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="10dp" android:paddingTop="10dp">
+        <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:background="@drawable/user_et_bg" android:gravity="center" android:orientation="horizontal" android:paddingLeft="15dp">
+          <TableRow android:layout_marginBottom="5dp" android:layout_weight="1" android:gravity="bottom">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_16" android:textColor="#A67D3D" android:textSize="15sp"/>
+            <EditText android:id="@+id/landing_EVuserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_17" android:inputType="textCapWords" android:maxLength="20" android:paddingLeft="8dp" android:singleLine="true" android:textColor="#666666" android:textSize="14sp"/>
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:background="@drawable/btn_landing_change_user" android:onClick="ChangeUserClick"/>
+          </TableRow>
+          <TableRow android:layout_marginTop="5dp" android:layout_weight="1" android:gravity="top">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_18" android:textColor="#A67D3D" android:textSize="15sp"/>
+            <EditText android:id="@+id/landing_EVpassWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@null" android:hint="@string/DW_string_19" android:inputType="textPassword" android:maxLength="20" android:paddingLeft="8dp" android:singleLine="true" android:textColor="#666666" android:textSize="14sp"/>
+          </TableRow>
+        </TableLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:gravity="center_vertical" android:orientation="horizontal">
+          <CheckBox android:id="@+id/landing_remember_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/remember_password_bg" android:checked="true" android:text="@string/DW_string_20" android:textColor="#555555" android:textSize="16sp"/>
+          <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:background="@drawable/langding_remember_password_right_line"/>
+          <TextView android:id="@+id/landing_find_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clickable="true" android:onClick="FindPasswordClick" android:text="@string/DW_string_21" android:textColor="@color/tv_text_color_findpass" android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_register_big" android:onClick="startLoginClick" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:background="@drawable/btn_orange_big" android:onClick="LandingClick" android:textColor="#6a3600" android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:gravity="center" android:orientation="horizontal">
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_quickgame_big" android:onClick="quickGameClick" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp">
+            <LinearLayout android:id="@+id/landing_elseWay_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="top" android:orientation="horizontal"/>
+            <Button android:id="@+id/landing_elseWay_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:background="@drawable/btn_elselogin_big" android:onClick="ElseClick" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          </RelativeLayout>
+        </LinearLayout>
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" layout="@layout/g_bottom_include"/>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

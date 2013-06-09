@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="_cfac9981254cd261923a9ea413bedd2e53e121922f7b283c5cb8a0034398937e_flash_display_Sprite" mod="1370743110578" signatureChecksum="606763471" >
+        <def id="_cfac9981254cd261923a9ea413bedd2e53e121922f7b283c5cb8a0034398937e_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="com/c1wan/ane/C1wanExtension" mod="1370743092218" signatureChecksum="3933659509" >
+        <def id="com.c1wan.ane:C1wanExtension" /> 
+        <dep id="flash.events:StatusEvent" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="flash.events:IEventDispatcher" type="s" /> 
+        <dep id="flash.events:StatusEvent" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.events:EventDispatcher" type="i" /> 
+      </script>
+      <script name="com/c1wan/ane/C1wanEvents" mod="1368416124000" signatureChecksum="3546698371" >
+        <def id="com.c1wan.ane:C1wanEvents" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="7e5700c2d8d15478636ab5b8d9872cff81b7ab9b0f33479b92632e469f247733"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

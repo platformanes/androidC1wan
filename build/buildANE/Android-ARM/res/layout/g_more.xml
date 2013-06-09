@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/more_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:id="@+id/more_dialog_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="8dp" android:paddingTop="8dp">
+        <ScrollView android:layout_width="360dp" android:layout_height="0dp" android:layout_marginBottom="15dp" android:layout_marginTop="10dp" android:layout_weight="1" android:fadingEdge="none" android:listSelector="#00000000" android:numColumns="4" android:scrollbars="@null" android:stretchMode="columnWidth" android:verticalSpacing="20dp">
+          <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+              <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <ImageButton android:id="@+id/more_btn_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_more_one" android:onClick="startWebViewClick"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_22" android:textColor="#555555" android:textSize="12sp"/>
+              </LinearLayout>
+              <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <ImageButton android:id="@+id/more_btn_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_more_two" android:onClick="startWebViewClick"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_23" android:textColor="#555555" android:textSize="12sp"/>
+              </LinearLayout>
+              <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_horizontal" android:orientation="vertical">
+                <ImageButton android:id="@+id/more_btn_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/btn_more_three" android:onClick="startWebViewClick"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DW_string_24" android:textColor="#555555" android:textSize="12sp"/>
+              </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:padding="10dp" android:id="@+id/more_center_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"/>
+          </LinearLayout>
+        </ScrollView>
+        <GridView android:id="@+id/more_gv" android:layout_width="fill_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1" android:listSelector="#00000000" android:numColumns="2" android:stretchMode="columnWidth" android:verticalSpacing="10dp" android:visibility="gone"/>
+        <LinearLayout android:id="@+id/more_idea_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_white_bg" android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="5dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1" android:text="@string/DW_string_25" android:textColor="#555555" android:textSize="17sp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:background="@drawable/btn_back_bg" android:onClick="BackClick" android:text="@string/DW_string_26"/>
+          </LinearLayout>
+          <EditText android:id="@+id/more_etIdea" android:layout_width="380dp" android:layout_height="0dp" android:layout_marginBottom="5dp" android:layout_marginTop="4dp" android:layout_weight="1" android:background="@drawable/more_idea_tvbg" android:gravity="top" android:hint="@string/DW_string_27" android:inputType="textMultiLine" android:maxLength="140" android:padding="15dp" android:textSize="14sp"/>
+          <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:background="@drawable/btn_submit_big" android:onClick="SubmitClick" android:text="@string/DW_string_28" android:textColor="#6a3600" android:textSize="16sp"/>
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:background="@drawable/btn_white_big" android:onClick="goGameClick" android:text="@string/DW_string_29" android:textColor="@color/tv_text_color_change" android:textSize="16sp"/>
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/more_webView_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#ffffff"/>
+</LinearLayout>

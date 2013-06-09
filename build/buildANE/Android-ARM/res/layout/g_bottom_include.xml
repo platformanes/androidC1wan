@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TextView android:id="@+id/bottom_include_includemessage_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawableLeft="@drawable/landing_bottom_message_img" android:ellipsize="marquee" android:focusable="true" android:focusableInTouchMode="true" android:marqueeRepeatLimit="marquee_forever" android:paddingLeft="10dp" android:paddingRight="20dp" android:singleLine="true" android:scrollHorizontally="true" android:textColor="#555555" android:textSize="12sp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <requestFocus/>
+</TextView>

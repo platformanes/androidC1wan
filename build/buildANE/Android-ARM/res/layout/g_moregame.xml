@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout android:id="@+id/more_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/landscape_0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:id="@+id/more_dialog_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#99000000" android:gravity="center" android:orientation="horizontal">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+      <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/g_top_include"/>
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/layout_dialog_bottom_bg" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="8dp" android:paddingTop="8dp">
+        <LinearLayout android:id="@+id/moregame_lin1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical">
+          <ListView android:id="@+id/moregame_lv" android:layout_width="400dp" android:layout_height="180dp" android:divider="@drawable/moregame_line" android:listSelector="@drawable/moregame_item_bg"/>
+          <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/moregame_line"/>
+          <Button android:id="@+id/moregame_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/btn_moregame_morebg" android:onClick="BtnMoreClick"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/moregame_lin2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:visibility="gone">
+          <LinearLayout android:layout_width="410dp" android:layout_height="wrap_content" android:background="@drawable/moregame_content_bg" android:orientation="vertical">
+            <TextView android:id="@+id/moregame_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textSize="16sp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:gravity="center_horizontal" android:textColor="#de5700"/>
+            <TextView android:id="@+id/moregame_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:textColor="#000000" android:paddingTop="5dp" android:paddingBottom="5dp"/>
+          </LinearLayout>
+          <ScrollView android:layout_width="410dp" android:layout_height="110dp" android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="10dp" android:scrollbars="none">
+            <TextView android:id="@+id/moregame_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#000000"/>
+          </ScrollView>
+          <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/moregame_line"/>
+          <Button android:id="@+id/moregame_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/btn_moregame_backbg" android:onClick="BtnBackClick"/>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
